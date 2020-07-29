@@ -1,0 +1,10 @@
+# 忽略所有.a的文件
+*.a
+#跟踪所有lib.a的文件,即使在前面忽略了.a的文件
+!lib.a
+# 只忽略当前目录下的todo文件 防止递归
+/todo 
+#忽略所有目录下的名为build的文件
+build/
+#忽略doc/notes.txt 但不忽略doc/server/arch.txt
+doc/*.txt
